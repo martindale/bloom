@@ -1,43 +1,33 @@
 (ns bloom.android.core
-  (:require [om.next :as om :refer-macros [defui]]
-            [re-natal.support :as sup]
-            [bloom.state :as state]))
+  (:require [reagent.core :as r :refer [atom]]
+            [re-frame.core :refer [subscribe dispatch dispatch-sync]]
+            [bloom.events]
+            [bloom.subs]))
 
-(set! js/window.React (js/require "react"))
 (def ReactNative (js/require "react-native"))
 
-(defn create-element [rn-comp opts & children]
-      (apply js/React.createElement rn-comp (clj->js opts) children))
-
 (def app-registry (.-AppRegistry ReactNative))
-(def view (partial create-element (.-View ReactNative)))
-(def text (partial create-element (.-Text ReactNative)))
-(def image (partial create-element (.-Image ReactNative)))
-(def touchable-highlight (partial create-element (.-TouchableHighlight ReactNative)))
+(def text (r/adapt-react-class (.-Text ReactNative)))
+(def view (r/adapt-react-class (.-View ReactNative)))
+(def image (r/adapt-react-class (.-Image ReactNative)))
+(def touchable-highlight (r/adapt-react-class (.-TouchableHighlight ReactNative)))
 
-(def logo-img (js/require "./images/cljs.png"))
+(def logo-img (js/require "./images/bloom.png"))
 
 (defn alert [title]
       (.alert (.-Alert ReactNative) title))
 
-(defui AppRoot
-       static om/IQuery
-       (query [this]
-              '[:app/msg])
-       Object
-       (render [this]
-               (let [{:keys [app/msg]} (om/props this)]
-                    (view {:style {:flexDirection "column" :margin 40 :alignItems "center"}}
-                          (text {:style {:fontSize 30 :fontWeight "100" :marginBottom 20 :textAlign "center"}} msg)
-                          (image {:source logo-img
-                                  :style  {:width 80 :height 80 :marginBottom 30}})
-                          (touchable-highlight {:style   {:backgroundColor "#999" :padding 10 :borderRadius 5}
-                                                :onPress #(alert "HELLO!")}
-                                               (text {:style {:color "white" :textAlign "center" :fontWeight "bold"}} "press me"))))))
-
-(defonce RootNode (sup/root-node! 1))
-(defonce app-root (om/factory RootNode))
+(defn app-root []
+  (let [greeting (subscribe [:get-greeting])]
+    (fn []
+      [view {:style {:flex-direction "column" :margin 40 :align-items "center"}}
+       [text {:style {:font-size 30 :font-weight "100" :margin-bottom 20 :text-align "center"}} @greeting]
+       [image {:source logo-img
+               :style  {:width 80 :height 80 :margin-bottom 30}}]
+       [touchable-highlight {:style {:background-color "#999" :padding 10 :border-radius 5}
+                             :on-press #(alert "HELLO!")}
+        [text {:style {:color "white" :text-align "center" :font-weight "bold"}} "press me"]]])))
 
 (defn init []
-      (om/add-root! state/reconciler AppRoot 1)
-      (.registerComponent app-registry "bloom" (fn [] app-root)))
+      (dispatch-sync [:initialize-db])
+      (.registerComponent app-registry "bloom" #(r/reactify-component app-root)))

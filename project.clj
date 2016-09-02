@@ -1,11 +1,12 @@
 (defproject bloom "0.1.0-SNAPSHOT"
-            :description "Bloom is a peer-to-peer mobile education ecosystem."
-            :url "https://bloomv1.org"
+            :description "FIXME: write description"
+            :url "http://example.com/FIXME"
             :license {:name "Eclipse Public License"
                       :url  "http://www.eclipse.org/legal/epl-v10.html"}
-            :dependencies [[org.clojure/clojure "1.9.0-alpha11"]
-                           [org.clojure/clojurescript "1.9.227"]
-                           [org.omcljs/om "1.0.0-alpha35" :exclusions [cljsjs/react cljsjs/react-dom]]]
+            :dependencies [[org.clojure/clojure "1.9.0-alpha10"]
+                           [org.clojure/clojurescript "1.9.89"]
+                           [reagent "0.6.0-rc" :exclusions [cljsjs/react cljsjs/react-dom cljsjs/react-dom-server]]
+[re-frame "0.8.0-alpha9"]]
             :plugins [[lein-cljsbuild "1.1.1"]
                       [lein-figwheel "0.5.0-6"]]
             :clean-targets ["target/" "index.ios.js" "index.android.js"]

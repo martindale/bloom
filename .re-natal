@@ -1,6 +1,6 @@
 {
   "name": "bloom",
-  "interface": "om-next",
+  "interface": "reagent6",
   "androidHost": "localhost",
   "iosHost": "localhost",
   "envRoots": {
