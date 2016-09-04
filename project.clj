@@ -1,34 +1,52 @@
 (defproject bloom "0.1.0-SNAPSHOT"
-            :description "Bloom is a peer-to-peer mobile education ecosystem."
-            :url "https://bloomv1.org"
+            :description "Bloom is a nonprofit, decentralized peer-to-peer education system. ♥‿♥"
+            :url "https://bloomv1.org/"
+
             :license {:name "Eclipse Public License"
                       :url  "http://www.eclipse.org/legal/epl-v10.html"}
+
+
             :dependencies [[org.clojure/clojure "1.9.0-alpha11"]
                            [org.clojure/clojurescript "1.9.227"]
-                           [org.omcljs/om "1.0.0-alpha35" :exclusions [cljsjs/react cljsjs/react-dom]]]
-            :plugins [[lein-cljsbuild "1.1.1"]
+                           [org.omcljs/om "1.0.0-alpha35" :exclusions [cljsjs/react cljsjs/react-dom]]
+                           [prismatic/schema "1.1.3"]
+                           [cljs-ajax "0.5.8"]]]
+
+
+            :plugins [[lein-cljsbuild "1.1.4"]
                       [lein-figwheel "0.5.0-6"]]
+
+
             :clean-targets ["target/" "index.ios.js" "index.android.js"]
+
+
             :aliases {"prod-build" ^{:doc "Recompile code with prod profile."}
-                                   ["do" "clean"
+                                    ["do" "clean"
                                     ["with-profile" "prod" "cljsbuild" "once" "ios"]
                                     ["with-profile" "prod" "cljsbuild" "once" "android"]]}
+
+
             :profiles {:dev {:dependencies [[figwheel-sidecar "0.5.0-6"]
                                             [com.cemerick/piggieback "0.2.1"]]
+
                              :source-paths ["src" "env/dev"]
+
                              :cljsbuild    {:builds {:ios     {:source-paths ["src" "env/dev"]
                                                                :figwheel     true
                                                                :compiler     {:output-to     "target/ios/not-used.js"
                                                                               :main          "env.ios.main"
                                                                               :output-dir    "target/ios"
                                                                               :optimizations :none}}
+
                                                      :android {:source-paths ["src" "env/dev"]
                                                                :figwheel     true
                                                                :compiler     {:output-to     "target/android/not-used.js"
                                                                               :main          "env.android.main"
                                                                               :output-dir    "target/android"
                                                                               :optimizations :none}}}}
+
                              :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}}
+
                        :prod {:cljsbuild {:builds {:ios     {:source-paths ["src" "env/prod"]
                                                              :compiler     {:output-to     "index.ios.js"
                                                                             :main          "env.ios.main"
@@ -37,6 +55,7 @@
                                                                             :optimize-constants true
                                                                             :optimizations :simple
                                                                             :closure-defines {"goog.DEBUG" false}}}
+
                                                    :android {:source-paths ["src" "env/prod"]
                                                              :compiler     {:output-to     "index.android.js"
                                                                             :main          "env.android.main"

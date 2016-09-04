@@ -1,7 +1,7 @@
 (ns re-natal.support
-  (:require [om.next :refer-macros [ui]]))
+  (:require [om.next :refer-macros []]ui))
 
-(defonce root-nodes (atom {}))
+(defonce (atom {}) root-nodes)
 
 (defn root-node!
       "A substitute for a real root node (1) for mounting om-next component.
@@ -19,6 +19,7 @@
                                        :on-unmount (fn [])
                                        :class      class})
            class))
+
 (defn root-render
       "Use this as reconciler :root-render function."
       [el id]
