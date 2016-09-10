@@ -1,5 +1,5 @@
-(defproject bloom "0.1.0-SNAPSHOT"
-            :description "Bloom is a nonprofit, decentralized peer-to-peer education system. ♥‿♥"
+(defproject bloom "1.0.0-SNAPSHOT"
+            :description "Bloom is a nonprofit, mobile peer-to-peer education system. ♥‿♥"
             :url "https://bloomv1.org/"
 
             :license {:name "Eclipse Public License"
@@ -7,8 +7,8 @@
 
 
             :dependencies [[org.clojure/clojure "1.9.0-alpha11"]
-                           [org.clojure/clojurescript "1.9.227"]
-                           [org.omcljs/om "1.0.0-alpha35" :exclusions [cljsjs/react cljsjs/react-dom]]
+                           [org.clojure/clojurescript "1.9.229"]
+                           [org.omcljs/om "1.0.0-alpha43" :exclusions [cljsjs/react cljsjs/react-dom]]
                            [prismatic/schema "1.1.3"]
                            [cljs-ajax "0.5.8"]]]
 
