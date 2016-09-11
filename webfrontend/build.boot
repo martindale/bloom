@@ -4,21 +4,21 @@
   :source-paths #{}
   :resource-paths #{"html" "less" "resources" "src"}
   :dependencies '[; Boot setup
-                  [adzerk/boot-cljs "1.7.170-1"]
-                  [adzerk/boot-reload "0.4.1"]
-                  [deraen/boot-less "0.4.2"]
-                  [pandeiro/boot-http "0.7.0-SNAPSHOT"]
+                  [adzerk/boot-cljs "1.7.228-1"]
+                  [adzerk/boot-reload "0.4.12"]
+                  [deraen/boot-less "0.5.0"]
+                  [pandeiro/boot-http "0.7.3"]
 
                   ; App dependencies
-                  [org.clojure/clojurescript "1.7.170"]
-                  [org.omcljs/om "1.0.0-alpha19-SNAPSHOT"]
+                  [org.clojure/clojurescript "1.7.228"]
+                  [org.omcljs/om "1.0.0-alpha28-SNAPSHOT"]
 
                   ; Other dependencies
                   [devcards "0.2.0-8"]])
 
 (task-options!
-  pom {:project 'boot-template-om-next
-       :version "0.1.0-SNAPSHOT"})
+  pom {:project 'bloom-webfrontend
+       :version "1.0"})
 
 (require '[adzerk.boot-cljs :refer [cljs]]
          '[adzerk.boot-reload :refer [reload]]
