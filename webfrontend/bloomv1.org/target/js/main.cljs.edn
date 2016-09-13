@@ -1,0 +1,1 @@
+{:require [bloomv1_org.core adzerk.boot-reload.init1056 adzerk.boot-cljs-repl], :compiler-options {:asset-path "js/main.out"}}

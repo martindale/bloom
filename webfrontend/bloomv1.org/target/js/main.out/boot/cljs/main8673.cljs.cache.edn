@@ -1,0 +1,1 @@
+{:name boot.cljs.main8673, :doc nil, :excludes #{}, :use-macros nil, :require-macros nil, :uses nil, :requires {adzerk.boot-cljs-repl adzerk.boot-cljs-repl, adzerk.boot-reload.init1056 adzerk.boot-reload.init1056, bloomv1_org.core bloomv1_org.core}, :imports nil}

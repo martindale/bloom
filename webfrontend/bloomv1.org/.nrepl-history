@@ -1,0 +1,29 @@
+exit
+(+ 1 )
+(+ 2 4)
+(+24)
+clear
+'clear
+'cl
+'clear
+'cke
+'clear
+(r
+'beast)
+'clear
+'(I'm a beality).
+'(I'm a beality)
+'You da stud
+'YouDaStu
+'YouDaStud
+'(quote whatever the hell I want)
+'(OKay let's not get carried away now)
+'(Let's get back to work fucace)
+(start-repl)
+(js/alert "Hello, ClojureScript")
+:cljs/quit
+exit
+quit
+(start-repl)
+(+ 1 3)
+'(sweet)

@@ -1,0 +1,13 @@
+(+ 6 6
+)
+(+ 6 6 6)
+('sweet)
+'
+)
+'(sweet)
+'(clear
+'(clear)
+)
+'(clear)
+boot -h
+exit

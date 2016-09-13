@@ -1,0 +1,2 @@
+{:require [bloomv1_org.core]
+ :compiler-options {:asset-path "js/main.out"}}
