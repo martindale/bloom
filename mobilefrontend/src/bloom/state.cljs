@@ -2,7 +2,7 @@
   (:require [om.next :as om]
             [re-natal.support :as sup]))
 
-(defonce app-state (atom {:app/msg "Hello Clojure in iOS and Android!"}))
+(defonce app-state (atom {:app/msg "Build together."}))
 
 (defmulti read om/dispatch)
 (defmethod read :default

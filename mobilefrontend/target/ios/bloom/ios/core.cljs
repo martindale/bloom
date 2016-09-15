@@ -15,7 +15,7 @@
 (def image (partial create-element (.-Image ReactNative)))
 (def touchable-highlight (partial create-element (.-TouchableHighlight ReactNative)))
 
-(def logo-img (js/require "./images/cljs.png"))
+(def logo-img (js/require "./images/bloom.png"))
 
 (defn alert [title]
       (.alert (.-Alert ReactNative) title))
