@@ -1,2 +1,2 @@
-var modules={'react-native': require('react-native'), 'react': require('react')};modules['./images/bloom.png']=require('./images/bloom.png');modules['./images/cljs.png']=require('./images/cljs.png');
+var modules={'react-native': require('react-native'), 'react': require('react')};modules['./images/bloom.png']=require('./images/bloom.png');modules['./images/bloom1.png']=require('./images/bloom1.png');modules['./images/cljs.png']=require('./images/cljs.png');
 require('figwheel-bridge').withModules(modules).start('bloom','ios','localhost');

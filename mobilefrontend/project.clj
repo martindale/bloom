@@ -8,7 +8,7 @@
 
             :dependencies [[org.clojure/clojure "1.9.0-alpha12"]
                            [org.clojure/clojurescript "1.9.229"]
-                           [org.omcljs/om "1.0.0-alpha43" :exclusions [cljsjs/react cljsjs/react-dom]]
+                           [org.omcljs/om "1.0.0-alpha45" :exclusions [cljsjs/react cljsjs/react-dom]]
                            [prismatic/schema "1.1.3"]
                            [cljs-ajax "0.5.8"]]
 

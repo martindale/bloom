@@ -39,3 +39,57 @@ notifying browser that file changed:  out/bloom/ios/core.js
 [0mCompiling "target/ios/not-used.js" from ["src" "env/dev"]...
 notifying browser that file changed:  out/bloom/state.js
 [32mSuccessfully compiled "target/ios/not-used.js" in 0.43 seconds.[0m
+[0mCompiling "target/ios/not-used.js" from ["src" "env/dev"]...
+notifying browser that file changed:  target/ios/goog/deps.js
+notifying browser that file changed:  target/ios/cljs_deps.js
+notifying browser that file changed:  out/bloom/state.js
+[32mSuccessfully compiled "target/ios/not-used.js" in 0.768 seconds.[0m
+[0mCompiling "target/ios/not-used.js" from ["src" "env/dev"]...
+notifying browser that file changed:  out/bloom/state.js
+[32mSuccessfully compiled "target/ios/not-used.js" in 0.499 seconds.[0m
+[0mCompiling "target/ios/not-used.js" from ["src" "env/dev"]...
+notifying browser that file changed:  target/ios/goog/deps.js
+notifying browser that file changed:  target/ios/cljs_deps.js
+notifying browser that file changed:  out/bloom/state.js
+[32mSuccessfully compiled "target/ios/not-used.js" in 0.776 seconds.[0m
+[0mCompiling "target/ios/not-used.js" from ["src" "env/dev"]...
+notifying browser that file changed:  out/bloom/ios/core.js
+[32mSuccessfully compiled "target/ios/not-used.js" in 0.517 seconds.[0m
+[0mCompiling "target/ios/not-used.js" from ["src" "env/dev"]...
+notifying browser that file changed:  out/bloom/ios/core.js
+[32mSuccessfully compiled "target/ios/not-used.js" in 0.491 seconds.[0m
+[0mCompiling "target/ios/not-used.js" from ["src" "env/dev"]...
+notifying browser that file changed:  out/bloom/ios/core.js
+[32mSuccessfully compiled "target/ios/not-used.js" in 0.493 seconds.[0m
+[0mCompiling "target/ios/not-used.js" from ["src" "env/dev"]...
+notifying browser that file changed:  out/bloom/ios/core.js
+[32mSuccessfully compiled "target/ios/not-used.js" in 0.439 seconds.[0m
+[0mCompiling "target/ios/not-used.js" from ["src" "env/dev"]...
+notifying browser that file changed:  out/bloom/ios/core.js
+[32mSuccessfully compiled "target/ios/not-used.js" in 0.916 seconds.[0m
+[0mCompiling "target/ios/not-used.js" from ["src" "env/dev"]...
+notifying browser that file changed:  out/bloom/ios/core.js
+[32mSuccessfully compiled "target/ios/not-used.js" in 0.906 seconds.[0m
+[0mCompiling "target/ios/not-used.js" from ["src" "env/dev"]...
+notifying browser that file changed:  out/bloom/ios/core.js
+[32mSuccessfully compiled "target/ios/not-used.js" in 0.453 seconds.[0m
+[0mCompiling "target/ios/not-used.js" from ["src" "env/dev"]...
+notifying browser that file changed:  out/bloom/ios/core.js
+[32mSuccessfully compiled "target/ios/not-used.js" in 0.379 seconds.[0m
+[0mCompiling "target/ios/not-used.js" from ["src" "env/dev"]...
+notifying browser that file changed:  out/bloom/ios/core.js
+[32mSuccessfully compiled "target/ios/not-used.js" in 0.39 seconds.[0m
+[0mCompiling "target/ios/not-used.js" from ["src" "env/dev"]...
+notifying browser that file changed:  out/bloom/ios/core.js
+[32mSuccessfully compiled "target/ios/not-used.js" in 0.361 seconds.[0m
+[0mCompiling "target/ios/not-used.js" from ["src" "env/dev"]...
+notifying browser that file changed:  out/bloom/ios/core.js
+[32mSuccessfully compiled "target/ios/not-used.js" in 0.495 seconds.[0m
+[0mCompiling "target/ios/not-used.js" from ["src" "env/dev"]...
+notifying browser that file changed:  out/bloom/ios/core.js
+[32mSuccessfully compiled "target/ios/not-used.js" in 0.929 seconds.[0m
+[0mCompiling "target/ios/not-used.js" from ["src" "env/dev"]...
+notifying browser that file changed:  target/ios/goog/deps.js
+notifying browser that file changed:  target/ios/cljs_deps.js
+notifying browser that file changed:  out/bloom/ios/core.js
+[32mSuccessfully compiled "target/ios/not-used.js" in 0.688 seconds.[0m

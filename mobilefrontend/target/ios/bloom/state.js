@@ -5,7 +5,7 @@ goog.require('om.next');
 goog.require('re_natal.support');
 if(typeof bloom.state.app_state !== 'undefined'){
 } else {
-bloom.state.app_state = cljs.core.atom.call(null,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword("app","msg","app/msg",-1386003639),"Build together."], null));
+bloom.state.app_state = cljs.core.atom.call(null,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword("app","msg","app/msg",-1386003639),"This is ClojureScript. :)"], null));
 }
 if(typeof bloom.state.read !== 'undefined'){
 } else {
@@ -17,16 +17,16 @@ var hierarchy__21168__auto__ = cljs.core.get.call(null,cljs.core.PersistentArray
 return (new cljs.core.MultiFn(cljs.core.symbol.call(null,"bloom.state","read"),om.next.dispatch,new cljs.core.Keyword(null,"default","default",-1987822328),hierarchy__21168__auto__,method_table__21164__auto__,prefer_table__21165__auto__,method_cache__21166__auto__,cached_hierarchy__21167__auto__));
 })();
 }
-cljs.core._add_method.call(null,bloom.state.read,new cljs.core.Keyword(null,"default","default",-1987822328),(function (p__23903,k,_){
-var map__23904 = p__23903;
-var map__23904__$1 = ((((!((map__23904 == null)))?((((map__23904.cljs$lang$protocol_mask$partition0$ & (64))) || (map__23904.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__23904):map__23904);
-var state = cljs.core.get.call(null,map__23904__$1,new cljs.core.Keyword(null,"state","state",-1988618099));
+cljs.core._add_method.call(null,bloom.state.read,new cljs.core.Keyword(null,"default","default",-1987822328),(function (p__25160,k,_){
+var map__25161 = p__25160;
+var map__25161__$1 = ((((!((map__25161 == null)))?((((map__25161.cljs$lang$protocol_mask$partition0$ & (64))) || (map__25161.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__25161):map__25161);
+var state = cljs.core.get.call(null,map__25161__$1,new cljs.core.Keyword(null,"state","state",-1988618099));
 var st = cljs.core.deref.call(null,state);
 var temp__6726__auto__ = cljs.core.find.call(null,st,k);
 if(cljs.core.truth_(temp__6726__auto__)){
-var vec__23906 = temp__6726__auto__;
-var ___$1 = cljs.core.nth.call(null,vec__23906,(0),null);
-var v = cljs.core.nth.call(null,vec__23906,(1),null);
+var vec__25163 = temp__6726__auto__;
+var ___$1 = cljs.core.nth.call(null,vec__25163,(0),null);
+var v = cljs.core.nth.call(null,vec__25163,(1),null);
 return new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),v], null);
 } else {
 return new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),new cljs.core.Keyword(null,"not-found","not-found",-629079980)], null);
